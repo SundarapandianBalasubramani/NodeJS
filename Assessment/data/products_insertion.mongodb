@@ -1,0 +1,58 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('coffeeShop');
+
+
+
+// Insert a few documents into the products collection.
+db.products.insertMany([
+  { '_id': 1, 'name': 'Black Coffee', 'description': "Lorem ipsum Lorem ipsum", "createdOn": new Date(), "createdBy":1,
+"updatedOn": new Date(), "updatedBy":1,"sortOrder":1,"img":"black_cofee.png","price":20,
+"category":[],"available":true},
+
+ { '_id': 2, 'name': 'Burger','description': "Lorem ipsum Lorem ipsum",  "createdOn": new Date(), "createdBy":1,
+"updatedOn": new Date(), "updatedBy":1,"sortOrder":2,"img":"burger.png","price":50,
+"category":[],"available":true},
+
+ { '_id': 3, 'name': 'Cheese Tostie', 'description': "Lorem ipsum Lorem ipsum",  "createdOn": new Date(), "createdBy":1,
+"updatedOn": new Date(), "updatedBy":1,"sortOrder":3,"img":"cheese_tostie.png","price":40,
+"category":[],"available":true},
+ 
+ { '_id': 4, 'name': 'Choclate Cake', 'description': "Lorem ipsum Lorem ipsum",  "createdOn": new Date(), "createdBy":1,
+"updatedOn": new Date(), "updatedBy":1,"sortOrder":4,"img":"choclate_cake.png","price":50,
+"category":[],"available":true},
+
+
+
+ { '_id': 5, 'name': 'Creame Tea', 'description': "Lorem ipsum Lorem ipsum",  "createdOn": new Date(), "createdBy":1,
+"updatedOn": new Date(), "updatedBy":1,"sortOrder":5,"img":"creame_tea.png","price":30,
+"category":[],"available":true},
+
+ { '_id': 6, 'name': 'Donuts', 'description': "Lorem ipsum Lorem ipsum",  "createdOn": new Date(), "createdBy":1,
+"updatedOn": new Date(), "updatedBy":1,"sortOrder":6,"img":"donuts.png","price":80,
+"category":[],"available":true},
+
+{ '_id': 7, 'name': 'Expresso', 'description': "Lorem ipsum Lorem ipsum",  "createdOn": new Date() , "createdBy":1,
+"updatedOn": new Date(), "updatedBy":1,"sortOrder":7,"img":"expresso.png","price":80,
+"category":[],"available":true},
+
+
+ { '_id': 8, 'name': 'Italian Sandwich', 'description': "Lorem ipsum Lorem ipsum",  "createdOn": new Date(), "createdBy":1,
+"updatedOn": new Date(), "updatedBy":1,"sortOrder":8,"img":"italian_sandwich.png","price":100,
+"category":[],"available":true},
+
+
+ { '_id': 9, 'name': 'Lemon Juice', 'description': "Lorem ipsum Lorem ipsum",  "createdOn": new Date(), "createdBy":1,
+"updatedOn": new Date(), "updatedBy":1,"sortOrder":9,"img":"lemon_juice.png","price":20,
+"category":[],"available":true},
+
+ { '_id': 10, 'name': 'Masala Tea', 'description': "Lorem ipsum Lorem ipsum",  "createdOn": new Date(), "createdBy":1,
+"updatedOn": new Date(), "updatedBy":1,"sortOrder":10,"img":"masala_tea.png","price":30,
+"category":[],"available":true}
+
+]);
+

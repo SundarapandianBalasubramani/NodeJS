@@ -1,0 +1,43 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('coffeeShop');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+//db.admin.drop();
+
+// Insert a few documents into the sales collection.
+db.admins.insertMany([ 
+  {
+    "_id": 1,
+    "prefferedName": "Sundar",
+    "firstName": "Sundarapandian",
+    "lastName": "Balasubramani",
+    "email": "Sundarapandian.Balasubramani@outlook.com",
+    "createdOn": new Date(),
+    "updatedOn": new Date(),
+    "phone": "+91 7598177774",
+    "pwd": "$2a$12$Wb4G8o84z8RuLuDBSn4j2uu8i.ELH00D01NvTy/ZJerQW8MC5lECu",
+    "role": { "readWriteProducts": 1, "readWriteOffers": 1 }
+  },
+  {
+    "_id": 2,
+    "prefferedName": "Sathish",
+    "firstName": "Sathishkumar",
+    "lastName": "Balasubramani",
+    "email": "Sathishkumar.Balasubramani@outlook.com",
+    "createdOn": new Date(),
+    "updatedOn": new Date(),
+    "phone": "+91 9600222514",
+    "pwd": "$2a$12$Wb4G8o84z8RuLuDBSn4j2uu8i.ELH00D01NvTy/ZJerQW8MC5lECu",
+    "role": { "readWriteProducts": 1, "readWriteOffers": 1 }
+  }
+
+]);
+
+
+

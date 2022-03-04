@@ -1,0 +1,39 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('coffeeShop');
+
+
+
+// Insert a few documents into the offers collection.
+db.orders.insertMany([
+  { '_id': 1, 
+   "createdOn": new Date(), "createdBy":1,
+   "updatedOn": new Date(), "updatedBy":1, "user": 1, 
+   "order" :{"products":[
+     {"id":1, "name":"Black Coffee", "price":20, "count":2 }, 
+     {"id":8, "name":"Italian Sandwich", "price":100, "count":2 , "free":true }
+     ], "offer":{"id":1, "name": "Buy 2 Get 1 Offer", "type":1}, "total": 40}
+},
+
+ { '_id': 2,  "createdOn": new Date(), "createdBy":2,
+"updatedOn": new Date(), "updatedBy":2, "user": 2, 
+ "order" :{"products":[
+     {"id":7, "name":"Expresso", "price":80, "count":3 }, 
+     ], "offer":{"id":2, "name": "Buy 2 Get 1 Offer", "type":2, "coupon":0.05}, "total": 240 , "discount":12}
+   },
+
+ { '_id': 3,   "createdOn": new Date(),  "createdBy":1,
+
+ "updatedOn": new Date(), "updatedBy":1, "user": 1, 
+   "type" : 1, "count" : 3, "offerProductId":6 ,
+   "order" :{"products":[
+     {"id":6, "name":"Donuts", "price":80, "count":4, "freeCount":1 }, 
+     ], "offer":{"id":3, "name": "Buy 3 Get 1 Free", "type":3 }, "total": 240 , "discount":80}},
+
+
+]);
+

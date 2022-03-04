@@ -1,0 +1,46 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('coffeeShop');
+
+
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+//db.admin.drop();
+
+// Insert a few documents into the sales collection.
+db.users.insertMany([ 
+  {
+    "_id": 1,
+    "prefferedName": "Sundar",
+    "firstName": "Sundarapandian",
+    "lastName": "Balasubramani",
+    "email": "Sundarapandian@outlook.in",
+    "createdOn": new Date(),
+    "updatedOn": new Date(),
+    "phone": "+91 7598177774",
+    "pwd": "$2a$12$pZ0p/8T2mgS2u.p8IWRT.uv1m4Gw0QKuhoUAt/2Kj2yxTKOMBF0lG",
+   
+  },
+  {
+    "_id": 2,
+    "prefferedName": "Sathish",
+    "firstName": "Sathishkumar",
+    "lastName": "Balasubramani",
+    "email": "sathishbl3@gmail.com",
+    "createdOn": new Date(),
+    "updatedOn": new Date(),
+    "phone": "+91 9600222514",
+    "pwd": "$2a$12$pZ0p/8T2mgS2u.p8IWRT.uv1m4Gw0QKuhoUAt/2Kj2yxTKOMBF0lG",
+    
+  }
+
+]);
+
+
+
+

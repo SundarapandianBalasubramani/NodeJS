@@ -1,0 +1,15 @@
+
+use('coffeeShop');
+
+
+db.getCollection('users')
+  .createIndex(
+    {
+      email:  1, //ascending
+     
+    }, {
+         unique: true,
+         collation: { locale: 'en', strength: 2 }
+     
+    }
+  );
